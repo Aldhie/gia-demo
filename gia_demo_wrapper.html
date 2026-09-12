@@ -43,25 +43,11 @@
     border-radius:14px;overflow:hidden;position:relative;
   }
 
-  /* ============================================================ */
-  /*  TEMPEL KODE EMBED DARI CLAUDE (Publish -> Get embed code)     */
-  /*  di dalam <div id="gia-embed"> ini. Ganti placeholder di       */
-  /*  bawah dengan <iframe ...></iframe> yang lo copy dari Claude.  */
-  /* ============================================================ */
- <iframe src="https://claude.site/public/artifacts/16b705f3-fdfb-4974-b4ae-cb0f02d1d33d/embed" title="gia_digital_travel_agent_demo.html" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
-  /* Placeholder ini otomatis hilang begitu iframe asli ditempel di atasnya */
-  .embed-placeholder{
-    position:absolute;inset:0;display:flex;flex-direction:column;
-    align-items:center;justify-content:center;gap:10px;text-align:center;padding:30px;
+  #gia-embed{
+    width:100%;height:100%;
   }
-  .embed-placeholder .icon{
-    width:44px;height:44px;border-radius:10px;border:1px dashed var(--line);
-    display:flex;align-items:center;justify-content:center;color:var(--muted-2);font-size:20px;
-  }
-  .embed-placeholder p{color:var(--muted);font-size:13px;max-width:380px;line-height:1.6;margin:0;}
-  .embed-placeholder code{
-    background:var(--panel-2);border:1px solid var(--line);border-radius:5px;
-    padding:2px 6px;color:var(--cyan);font-size:12px;
+  #gia-embed iframe{
+    width:100%;height:100%;border:none;display:block;
   }
 
   .foot-note{
@@ -84,14 +70,8 @@
   <div class="stage">
     <div class="embed-frame">
       <div id="gia-embed">
-        <!-- ============================================================ -->
-        <!--  GANTI BLOK DI BAWAH INI DENGAN KODE EMBED DARI CLAUDE.        -->
-        <!--  Caranya: buka demo artifact di Claude -> klik "Publish"       -->
-        <!--  -> klik "Get embed code" -> tambahkan gia-demo.globaltelko.com -->
-        <!--  ke kolom "Allowed domains" -> copy kode <iframe> yang muncul   -->
-        <!--  -> tempel menggantikan div.embed-placeholder di bawah ini.    -->
-        <!-- ============================================================ -->
-       <iframe src="https://claude.site/public/artifacts/16b705f3-fdfb-4974-b4ae-cb0f02d1d33d/embed" title="gia_digital_travel_agent_demo.html" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+        <iframe src="https://claude.site/public/artifacts/16b705f3-fdfb-4974-b4ae-cb0f02d1d33d/embed" title="gia_digital_travel_agent_demo.html" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+      </div>
     </div>
     <div class="foot-note">
       Demo konsep — dijalankan langsung dari sesi ini untuk keperluan presentasi internal.
